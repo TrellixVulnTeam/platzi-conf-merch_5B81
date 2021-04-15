@@ -6,7 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 import Home from '../containers/Home';
-import Checkout from '../co value={}ntainers/Checkout';
+import Checkout from '../containers/Checkout';
 import Information from '../containers/Information';
 import Payment from '../containers/Payment';
 import Success from '../containers/Success';
@@ -21,7 +21,7 @@ import useInitialState from '../hooks/useInitialState'
 export default function App() {
     const initialState = useInitialState(); 
     return (
-        //<AppContext.Provider value={initialState}>
+        <AppContext.Provider value={initialState}>
             <BrowserRouter>
                 <Layout>
                     <Switch>
@@ -34,7 +34,7 @@ export default function App() {
                     </Switch>
                 </Layout>
             </BrowserRouter>
-       // </AppContext.Provider>
+       </AppContext.Provider>
     )
 }
- 
+  
