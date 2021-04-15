@@ -1,8 +1,10 @@
 import React from 'react'
 
 import '../styles/components/Payment.css';
-//id Paypal
+
 export default function Payment() {
+
+  const idPaypal = "Aeqn2bdoDAIOByV5nNI7BDpwi0V2xpV6d5vfM-NRLqjj0qBBlxwmI5ivQLWNb8YlKmsQdgr9mYu-P2PZ"
     return (
         <div className="Payment">
       <div className="Payment-content">
