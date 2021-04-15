@@ -1,15 +1,15 @@
 import React, { useEffect, useContext, useRef } from 'react'
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import AppContext from '../context/AppContext'
 
 import '../styles/components/Information.css';
 
 
-export default function Information() {
+export default function Information({history}) {
     const { state, addToBuyer } = useContext(AppContext);
     const form = useRef(null);
-
     const { cart } = state;
+
 
     const handleSubmit = () => { 
         const formData = new FormData(form.current);
@@ -26,6 +26,7 @@ export default function Information() {
         }
 
         addToBuyer(buyer); 
+        history.push('/checkout/payment'); 
     }
 
     return (

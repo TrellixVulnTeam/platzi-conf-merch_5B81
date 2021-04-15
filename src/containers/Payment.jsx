@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '../styles/components/Payment.css';
-
+//id Paypal
 export default function Payment() {
     return (
         <div className="Payment">
